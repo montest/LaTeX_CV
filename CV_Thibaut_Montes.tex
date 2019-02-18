@@ -1,0 +1,247 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+% \usepackage{verbatim}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Thibaut}{Montes}{
+\href{mailto:montes.thibaut@gmail.com}{montes.thibaut@gmail.com} | +33 6 79 44 23 38
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.33\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Projects}
+
+\subsection{Optimal Quantization}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item New error bounds for \textbf{optimal quantization based cubature formula} and weak error development (Paper in progress).
+\item Build a hybrid quantization tree for a Randomized Heston Model using \textbf{Product Recursive Quantization} (Paper in progress).
+\item Optimize existing methods in order to build optimal quantizers: \textbf{Fixed Point Research Acceleration}. 
+\end{tightemize}
+\sectionsep
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\subsection{Multilevel Monte-Carlo}
+Optimizing xVA's risk (counterparty risk) computation using Multilevel Monte-Carlo that allows us to \textbf{\textit{kill the bias}} while \textbf{reducing the variance} of the estimator.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\section{Skills}
+
+\subsection{Programming}
+\location{Over 5000 lines:}
+C++ \textbullet{} \LaTeX \\ 
+\location{Over 1000 lines:}
+Scala \textbullet{} Python \textbullet{} Matlab \\
+\location{Discovering:}
+Kafka \textbullet{} MongoDB
+\sectionsep
+
+\subsection{Languages}
+\vspace{\topsep}
+\begin{tightemize}
+\item French: native
+\item English: fluent
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\section{Interests}
+Running \textbullet Trails
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.64\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+% \vspace{\topsep}
+
+\runsubsection{PhD CIFRE in Numerical Probability}
+\descript{| Laboratoire de Probabilités, Statistiques et Modélisation (LPSM) | Pierre et Marie Curie University (Paris VI)}
+\location{Mar 2017 – Mar 2020 (expected) | Paris, France}
+Under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at the Independent Calculation Agent, a Fintech whose aim is to efficiently compute risk measures linked to counterparty default. My research subjects are Optimal Quantization, also known as K-means, and Multilevel Monte-Carlo methods.
+% \vspace{\topsep}
+\sectionsep
+
+
+\runsubsection{ Research Master in Probability and Finance (with honors)}
+\descript{| Pierre et Marie Curie University (Paris VI) in collaboration with Ecole Polytechnique }
+\location{Sep 2014 – June 2016 | Paris, France}
+\vspace{\topsep}
+\begin{tightemize}
+	\item Numerical Probability (Monte-Carlo, Sensitivities Computation, $\dots$).
+	\item Stochastic Algorithms (Stochastic Gradient Descent, $\dots$).
+	\item Stochastic Calculus and Control.
+	\item Machine Learning.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Bachelor degree in Mathematics (with honors)}
+\descript{| Aix-Marseille University}
+\location{Sep 2011 – June 2014 | Paris, France}
+I spent the 2013-2014 academic year on exchange with the ERASMUS program in the Lund University's mathematics department, Lund, Sweden.
+
+
+% \runsubsection{Pierre et Marie Curie University (Paris VI)}
+
+% \descript{ Laboratoire de Probabilités, Statistiques et Modélisation (LPSM) | PhD CIFRE in Numerical Probability}
+% \location{Mar 2017 – Mar 2020 (expected) | Paris, France}
+% My PhD is under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and under the supervision of \textbf{Jean-Michel Fayolle} at the Independent Calculation Agent, a Fintech whose aim is to efficiently compute risk measures. My research subjects are Optimal Quantization, also known as K-means and Multilevel Monte-Carlo methods.
+% % \vspace{\topsep}
+% \sectionsep
+
+% \runsubsection{Pierre et Marie Curie University (Paris VI)}
+% \descript{| Research Master in Probability and Finance, in collaboration with Ecole Polytechnique (with honors)}
+% \location{Sep 2014 – June 2016 | Paris, France}
+% % \vspace{\topsep}
+% \sectionsep
+
+% \runsubsection{Aix-Marseille University}
+% \descript{| Bachelor degree in Mathematics (with honors) }
+% \location{Sep 2011 – June 2014 | Paris, France}
+% I spent the 2013-2014 academic year on exchange with the ERASMUS program in the Lund University's mathematics department, Lund, Sweden.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep}
+\section{Professional Experience}
+
+\runsubsection{Quantitative Analyst}
+\descript{| The Independent Calculation Agent}
+\location{ From Nov 2016 | Paris, France}
+As PhD candidate in collaboration with The ICA, I worked on the following projects:
+% \vspace{\topsep}
+\begin{tightemize}
+\item Optimizing the ICA's analytic library using Optimal Quantization based methods (Pricing of Exotic Options in the interest rate world).
+\item Identifying and \textit{killing} bias in the xVA computation using Multilevel Monte-Carlo methods.
+\item Implementing new regulatory risk measures in the library.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Intern}
+\descript{| The Independent Calculation Agent}
+\location{May 2016 – Oct 2016 | Paris, France}
+The goal of my internship was to optimize financial products price and risk measures sensitivities computations. I investigated both Malliavin calculus and finite differences methods and concluded the latter offered the best optimization.  
+%First the idea was to use Malliavin calculus but given the interest rate model, the best solution was to use finite difference.
+% I worked on the following projects:
+% %\vspace{\topsep}
+% \begin{tightemize}
+% \item Proof-reading "Optimal transport Methods in Economics", Alfred Galichon's 2016 published book.
+% \item Developing networks applications from the book in R. 
+% \item Reproducing Chiappori et al (2012)'s results using a matching method developed by Arnaud Dupuy, Alfred Galichon and Yifei Sun.
+% \end{tightemize}
+\sectionsep
+
+\runsubsection{Intern}
+\descript{| LPSM (former LPMA), under the direction of Daphné Giorgi and Vincent Lemaire}
+\location{Jun 2015 – Jul 2015 | Paris, France}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item .
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+% \end{tightemize}
+I explored short rate models (Vasicek Model) and their numerical simulation using trinomial trees. The results of the project can be accessed at the following link: \href{http://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees Simulation}
+\sectionsep
+
+\end{minipage} 
+\end{document}
+  % \documentclass[]{article}
