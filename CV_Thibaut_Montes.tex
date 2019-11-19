@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -47,11 +47,11 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
- 
+
 \pagestyle{fancy}
 \fancyhf{}
 % \usepackage{verbatim}
- 
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,7 +76,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \begin{minipage}[t]{0.33\textwidth} 
+% \begin{minipage}[t]{0.33\textwidth}
 \begin{minipage}[t]{0.33\textwidth}
 
 
@@ -90,15 +90,16 @@
 \vspace{\topsep}
 \begin{tightemize}
 \item New \textbf{Weak Error} bounds and expansions for \textbf{Optimal Quantization} \\ (Paper Submitted: \href{https://arxiv.org/abs/1903.10330}{\textbf{arXiv link}}).
-\item Introducing a Randomized Heston Model with pricing solutions: Hybrid quantization tree using \textbf{Product Recursive Quantization} \\ (Paper in progress).
-\item Optimize existing methods in order to build optimal quantizers: \textbf{Fixed Point Research Acceleration}. 
+\item \textbf{Quantization}-based Bermudan option pricing in the $FX$ world \\ (Paper Submitted: \href{https://arxiv.org/abs/1911.05462}{\textbf{arXiv link}}).
+\item Stationary Heston model: Calibration and Pricing of exotics using \textbf{Product Recursive Quantization} \\ (Paper in progress).
+\item Optimize existing methods in order to build optimal quantizers: \textbf{Fixed Point Research Acceleration}.
 \end{tightemize}
 \sectionsep
 % \vspace{\topsep}
 \subsection{Multilevel Monte-Carlo}
 \vspace{\topsep}
 \begin{tightemize}
-\item Optimizing xVA's risk (counterparty risk) computation using Multilevel Monte-Carlo that allows us to \textbf{\textit{kill the bias}} while \textbf{reducing the variance} of the estimator. 
+\item Optimizing xVA's risk (counterparty risk) computation using Multilevel Monte-Carlo that allows us to \textbf{\textit{kill the bias}} while \textbf{reducing the variance} of the estimator.
 \end{tightemize}
 
 
@@ -110,7 +111,7 @@
 
 \vspace{\topsep}
 \vspace{\topsep}
-\section{Links} 
+\section{Links}
 Website:// \href{https://montest.github.io}{\bf montest.github.io} \\
 Github:// \href{https://github.com/montest}{\bf montest} \\
 LinkedIn:// \href{https://www.linkedin.com/in/thibaut-montes-194a77a9}{\bf thibaut-montes-194a77a9}
@@ -134,7 +135,7 @@ Scala $\diamond$ Python $\diamond$ Matlab \\
 Kafka $\diamond$ MongoDB
 \end{tightemize}
 % \location{Over 5000 lines:}
-% C++ \textbullet{} \LaTeX \\ 
+% C++ \textbullet{} \LaTeX \\
 % \location{Over 1000 lines:}
 % Scala \textbullet{} Python \textbullet{} Matlab \\
 % \location{Discovering:}
@@ -163,9 +164,9 @@ Running $\diamond$ Trails
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.64\textwidth} 
+\begin{minipage}[t]{0.64\textwidth}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,7 +178,7 @@ Running $\diamond$ Trails
 
 \runsubsection{PhD CIFRE in Numerical Probability}
 \descript{| Laboratoire de Probabilités, Statistiques et Modélisation (LPSM) | Pierre et Marie Curie University (Paris VI)}
-\location{Mar 2017 – Mar 2020 (expected) | Paris, France}
+\location{Mar 2017 – Feb 2020 (expected) | Paris, France}
 Under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at the Independent Calculation Agent, a Fintech whose aim is to efficiently compute risk measures linked to counterparty default. My research subjects are Optimal Quantization, also known as K-means, and Multilevel Monte-Carlo methods.
 % \vspace{\topsep}
 \sectionsep
@@ -234,5 +235,5 @@ The goal of my internship was to optimize financial products price and risk meas
 I explored short rate models (Vasicek Model) and their numerical simulation using trinomial trees. The results of the project can be accessed at the following link: \href{http://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees Simulation}
 \sectionsep
 
-\end{minipage} 
+\end{minipage}
 \end{document}
