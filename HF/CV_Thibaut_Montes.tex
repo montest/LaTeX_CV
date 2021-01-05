@@ -15,35 +15,6 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
@@ -78,31 +49,6 @@
 
 \begin{minipage}[t]{0.33\textwidth}
 
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 RESEARCH PROJECTS
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	% \section{Research Projects}
-	%
-	% \subsection{Optimal Quantization}
-	% \vspace{\topsep}
-	% \begin{tightemize}
-	% 	\item Optimize existing methods in order to build optimal quantizers: \textbf{Fixed Point Research Acceleration}, \textbf{Gradient descent}.
-	% 	% \item \textbf{Quantization}-based Bermudan option pricing in the $FX$ world \\ (Paper Submitted: \href{https://arxiv.org/abs/1911.05462}{\textbf{arXiv link}}).
-	% 	% \item Stationary Heston model: Calibration and Pricing of exotics using \textbf{Product Recursive Quantization} \\ (Paper in progress).
-	% \end{tightemize}
-	% \sectionsep
-	% % \vspace{\topsep}
-	% \subsection{Multilevel Monte-Carlo}
-	% \vspace{\topsep}
-	% \begin{tightemize}
-	% 	\item Optimizing xVA's risk (counterparty risk) computation using Multilevel Monte-Carlo that allows us to \textbf{\textit{kill the bias}} while \textbf{reducing the variance} of the estimator.
-	% \end{tightemize}
-	%
-
-
-
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	 SKILLS
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,14 +78,6 @@
 		\item \location{Discovering:}
 		\textbf{Kafka} $\diamond$ \textbf{MongoDB}
 	\end{tightemize}
-	% \begin{tightemize}
-	% 	\item \location{Over 5000 lines:}
-	% 	C++ $\diamond$ \LaTeX \\
-	% 	\item \location{Over 1000 lines:}
-	% 	Scala $\diamond$ Python $\diamond$ Matlab \\
-	% 	\item \location{Discovering:}
-	% 	Kafka $\diamond$ MongoDB
-	% \end{tightemize}
 
 	\sectionsep
 	\subsection{Languages}
@@ -178,7 +116,7 @@
 	\section{Education}
 	% \vspace{\topsep}
 
-	\runsubsection{PhD candidate in Numerical Probability}
+	\runsubsection{PhD in Numerical Probability}
 	\descript{| Laboratoire de Probabilités, Statistiques et Modélisation (LPSM) | Sorbonne University (former Paris VI - UPMC)}
 	\location{Mar 2017 – June 2020 | Paris, France}
 	In collaboration with ICA France, a fintech aiming at efficiently compute risk measures linked to counterparty default. I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA France.
@@ -245,7 +183,7 @@
 	\section{Publications}
 
 	\begin{itemize}
-		\item Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. Available on \textit{arXiv}, 2020.
+		\item Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. Submitted to \textit{Quantitative Finance}, 2020.
 		\item Jean-Michel Fayolle, Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Quantization-based Bermudan option pricing in the $FX$ world}. Submitted to \textit{Journal of Computational Finance}, 2019.
 		\item Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{New weak error bounds and expansions for optimal quantization}. Published in \textit{Journal of Computational and Applied Mathematics}, 2019.
 	\end{itemize}

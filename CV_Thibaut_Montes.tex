@@ -15,35 +15,6 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
@@ -70,179 +41,150 @@
 	\href{https://montest.github.io/}{montest.github.io} | \href{mailto:montes.thibaut@gmail.com}{montes.thibaut@gmail.com}
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%	 COLUMN ONE
-%
+%	 EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \begin{minipage}[t]{0.33\textwidth}
-\begin{minipage}[t]{0.33\textwidth}
+\vspace{\topsep}
+
+\section{Professional Experience}
+
+\runsubsection{Desk Strat}
+\descript{| Deutsche Bank}
+\location{ Sep 2020 - Now | London, United-Kingdom}
+Working on the Synthetic Desk's migration to Kannon (P$\&$L and Risk tool used by trading).
+
+\sectionsep
+
+\runsubsection{Research Advisor}
+\descript{| The Independent Calculation Agent (ICA)}
+\location{ Nov 2016 - Mar 2020 | Paris, France}
+As a PhD candidate, I worked in collaboration with ICA on the following projects:
+\begin{tightemize}
+	\item[\diamond] Optimizing their analytic library using Optimal Quantization (Pricing of Exotic Options in the interest rate world).
+	\item[\diamond] Identifying and \textit{killing} bias in their xVA computation using Multilevel Monte-Carlo methods.
+	% \item Implementing new regulatory risk measures in the library.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Intern}
+\descript{| The Independent Calculation Agent (ICA)}
+\location{May 2016 – Oct 2016 | Paris, France}
+Optimization of financial products pricing and risk measures sensitivities computations.
+
+\sectionsep
+
+\runsubsection{Intern}
+\descript{| LPSM | Sorbonne University (former Paris VI)}
+\location{Jun 2015 – Jul 2015 | Paris, France}
+Simulation of short rate models using trinomial trees. The project can be accessed at the following link: \href{http://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	 EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep}
+
+\section{Education}
+
+\runsubsection{PhD in Numerical Probability}
+\descript{| LPSM | Sorbonne University (former Paris VI)}
+\location{Mar 2017 – Jun 2020}
+I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA France.
+
+My research subjects were \textbf{Optimal Quantization}, also known as K-means, and Multilevel Monte-Carlo methods.
+
+\sectionsep
+
+\runsubsection{ Research Master in Probability and Finance \small (with honors)}
+\descript{| Sorbonne University (former Paris VI) in collaboration with École Polytechnique}
+\location{Sep 2014 – Jun 2016}
+\vspace{0.1cm}
+\begin{tightemize}
+	\item[\diamond] Numerical Probability (Monte-Carlo, Sensitivities Computation, $\dots$).
+	\item[\diamond] Stochastic Algorithms (Stochastic Gradient Descent, $\dots$).
+	\item[\diamond] Machine Learning.
+	\item[\diamond] Stochastic Calculus and Control.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Bachelor degree in Mathematics \small (with honors)}
+\descript{| Aix-Marseille University}
+\location{Sep 2011 – Jun 2014}
+Third year of the Bachelor on exchange with the ERASMUS program at Lund University's mathematics department, Lund, Sweden.
 
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 RESEARCH PROJECTS
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\section{Research Projects}
-
-	\subsection{Optimal Quantization}
-	\vspace{\topsep}
-	\begin{tightemize}
-		\item New \textbf{Weak Error} bounds and expansions for \textbf{Optimal Quantization} \\ (Published in \textit{Journal of Computational and Applied Mathematics}: \href{https://doi.org/10.1016/j.cam.2019.112670}{\textbf{link}}).
-		\item Optimize existing methods in order to build optimal quantizers: \textbf{Fixed Point Research Acceleration}, \textbf{Gradient descent}.
-		\item \textbf{Quantization}-based Bermudan option pricing in the $FX$ world \\ (Paper Submitted: \href{https://arxiv.org/abs/1911.05462}{\textbf{arXiv link}}).
-		\item Stationary Heston model: Calibration and Pricing of exotics using \textbf{Product Recursive Quantization} \\ (Paper in progress).
-	\end{tightemize}
-	\sectionsep
-	% \vspace{\topsep}
-	\subsection{Multilevel Monte-Carlo}
-	\vspace{\topsep}
-	\begin{tightemize}
-		\item Optimizing xVA's risk (counterparty risk) computation using Multilevel Monte-Carlo that allows us to \textbf{\textit{kill the bias}} while \textbf{reducing the variance} of the estimator.
-	\end{tightemize}
-
-
-
+\begin{minipage}[t]{0.39\textwidth}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	 SKILLS
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\vspace{\topsep}
-	\vspace{\topsep}
-	\section{Links}
-	Website:// \href{https://montest.github.io}{\bf montest.github.io} \\
-	Github:// \href{https://github.com/montest}{\bf montest} \\
-	LinkedIn:// \href{https://www.linkedin.com/in/thibaut-montes-194a77a9}{\bf thibaut-montes-194a77a9}
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 SKILLS
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\vspace{\topsep}
 	\vspace{\topsep}
 	\section{Skills}
 
 	\subsection{Programming}
+
 	\vspace{\topsep}
 	\begin{tightemize}
-		\item \location{Over 5000 lines:}
-		\textbf{C++} (Creation of libraries) $\diamond$ \textbf{\LaTeX} \\
-		\item \location{Over 1000 lines:}
-		\textbf{Python} (Binding of C++ libraries using Pybind11 - \textbf{PyTorch}) $\diamond$ \textbf{Scala} (just for fun) \\
-		\item \location{Discovering:}
-		\textbf{Kafka} $\diamond$ \textbf{MongoDB}
+		\item[\diamond] \textbf{C++} (Creation of libraries)
+		\item[\diamond] \textbf{Python} (Binding of C++ libraries using Pybind11)
+		\item[\diamond] Basics: \textbf{Scala} $\diamond$ \textbf{Kafka} $\diamond$ \textbf{MongoDB}
 	\end{tightemize}
-	% \begin{tightemize}
-	% 	\item \location{Over 5000 lines:}
-	% 	C++ $\diamond$ \LaTeX \\
-	% 	\item \location{Over 1000 lines:}
-	% 	Scala $\diamond$ Python $\diamond$ Matlab \\
-	% 	\item \location{Discovering:}
-	% 	Kafka $\diamond$ MongoDB
-	% \end{tightemize}
 
 	\sectionsep
 	\subsection{Languages}
-	\vspace{\topsep}
-	\begin{tightemize}
-		\item French: native
-		\item English: fluent
-	\end{tightemize}
+	% \vspace{\topsep}
+	\textbf{French}: native -- \textbf{English}: fluent
+	% \begin{tightemize}
+	% 	\item French: native
+	% 	\item English: fluent
+	% \end{tightemize}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	 Interests
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\vspace{\topsep}
-	\vspace{\topsep}
 	\section{Interests}
 	Running $\diamond$ Trails
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%
-	%	 COLUMN TWO
-	%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.64\textwidth}
-
+\begin{minipage}[t]{0.59\textwidth}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 EDUCATION
+	%	 Publications
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\section{Education}
-	% \vspace{\topsep}
-
-	\runsubsection{PhD CIFRE in Numerical Probability}
-	\descript{| Laboratoire de Probabilités, Statistiques et Modélisation (LPSM) | Sorbonne University (ex Paris VI)}
-	\location{Mar 2017 – Feb 2020 (expected) | Paris, France}
-	Under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at the Independent Calculation Agent, a Fintech whose aim is to efficiently compute risk measures linked to counterparty default. My research subjects are Optimal Quantization, also known as K-means, and Multilevel Monte-Carlo methods.
-	% \vspace{\topsep}
-	\sectionsep
-
-
-	\runsubsection{ Research Master in Probability and Finance (with honors)}
-	\descript{| Sorbonne University (ex Paris VI) in collaboration with Ecole Polytechnique }
-	\location{Sep 2014 – Jun 2016 | Paris, France}
 	\vspace{\topsep}
-	\begin{tightemize}
-		\item Numerical Probability (Monte-Carlo, Sensitivities Computation, $\dots$).
-		\item Stochastic Algorithms (Stochastic Gradient Descent, $\dots$).
-		\item Stochastic Calculus and Control.
-		\item Machine Learning.
-	\end{tightemize}
-	\sectionsep
 
-
-	\runsubsection{Bachelor degree in Mathematics (with honors)}
-	\descript{| Aix-Marseille University }
-	\location{Sep 2011 – Jun 2014 | Paris, France}
-	Third year of the Bachelor on exchange with the ERASMUS program in the Lund University's mathematics department, Lund, Sweden.
-
+	\section{Publications}
+	\vspace{-0.1cm}
+	\begin{itemize}
+		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. Submitted to \textit{Quantitative Finance}, 2020.
+		\item[\diamond] Jean-Michel Fayolle, Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Quantization-based Bermudan option pricing in the $FX$ world}. Submitted to \textit{Journal of Computational Finance}, 2019.
+		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{New weak error bounds and expansions for optimal quantization}. Published in \textit{Journal of Computational and Applied Mathematics}, 2019.
+	\end{itemize}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 EXPERIENCE
+	%	 SKILLS
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% % \vspace{\topsep}
+	% \section{Links}
+	% Website: \href{https://montest.github.io}{\bf montest.github.io} \\
+	% Github: \href{https://github.com/montest}{\bf montest} \\
+	% LinkedIn: \href{https://www.linkedin.com/in/thibaut-montes-194a77a9}{\bf thibaut-montes-194a77a9}
 
-	\vspace{\topsep}
-	\vspace{\topsep}
-	\section{Professional Experience}
-
-	\runsubsection{Quantitative Researcher}
-	\descript{| The Independent Calculation Agent}
-	\location{ From Nov 2016 | Paris, France}
-	As PhD candidate in collaboration with The ICA, I worked on the following projects:
-	\begin{tightemize}
-		\item Optimizing the ICA's analytic library using Optimal Quantization based methods (Pricing of Exotic Options in the interest rate world).
-		\item Identifying and \textit{killing} bias in the xVA computation using Multilevel Monte-Carlo methods.
-		\item Implementing new regulatory risk measures in the library.
-	\end{tightemize}
-
-	\sectionsep
-
-	\runsubsection{Intern}
-	\descript{| The Independent Calculation Agent}
-	\location{May 2016 – Oct 2016 | Paris, France}
-	Optimization of financial products pricing and risk measures sensitivities computations (Malliavin calculus and finite differences methods).
-	\sectionsep
-
-	\runsubsection{Intern}
-	\descript{| LPSM (former LPMA), under the direction of Daphné Giorgi and Vincent Lemaire}
-	\location{Jun 2015 – Jul 2015 | Paris, France}
-	Numerical simulation of short rate models (Vasicek Model) using trinomial trees. The results of the project can be accessed at the following link: \href{http://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees Simulation}
-	\sectionsep
-
-
+	\vspace{-1.cm}
+	\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+	\bibliographystyle{alpha}
+	\bibliography{publications}
+	\nocite{*}
 
 \end{minipage}
-
-\nocite{*}
-\bibliography{publications}
-\bibliographystyle{alpha}
 
 \end{document}
