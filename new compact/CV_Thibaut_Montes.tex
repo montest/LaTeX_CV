@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+% \usepackage{verbatim}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	 LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	 TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Thibaut}{Montes}{
+	\href{https://montest.github.io/}{montest.github.io} | \href{mailto:montes.thibaut@gmail.com}{montes.thibaut@gmail.com}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	 EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep}
+
+\section{Professional Experience}
+
+\runsubsection{Desk Strat}
+\descript{| Deutsche Bank}
+\location{ Sep 2020 - Now | London, United-Kingdom}
+Working on the Synthetic Desk's migration to Kannon (P$\&$L and Risk tool used by trading).
+
+\sectionsep
+
+\runsubsection{Research Advisor}
+\descript{| The Independent Calculation Agent (ICA)}
+\location{ Nov 2016 - Mar 2020 | Paris, France}
+As a PhD candidate, I worked in collaboration with ICA on the following projects:
+\begin{tightemize}
+	\item[\diamond] Optimizing their analytic library using Optimal Quantization (Pricing of Exotic Options in the interest rate world).
+	\item[\diamond] Identifying and \textit{killing} bias in their xVA computation using Multilevel Monte-Carlo methods.
+	% \item Implementing new regulatory risk measures in the library.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Intern}
+\descript{| The Independent Calculation Agent (ICA)}
+\location{May 2016 – Oct 2016 | Paris, France}
+Optimization of financial products pricing and risk measures sensitivities computations.
+
+\sectionsep
+
+\runsubsection{Intern}
+\descript{| LPSM | Sorbonne University (former Paris VI)}
+\location{Jun 2015 – Jul 2015 | Paris, France}
+Simulation of short rate models using trinomial trees. The project can be accessed at the following link: \href{http://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	 EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep}
+
+\section{Education}
+
+\runsubsection{PhD in Numerical Probability}
+\descript{| LPSM | Sorbonne University (former Paris VI)}
+\location{Mar 2017 – Jun 2020}
+I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA France.
+
+My research subjects were \textbf{Optimal Quantization}, also known as K-means, and Multilevel Monte-Carlo methods.
+
+\sectionsep
+
+\runsubsection{ Research Master in Probability and Finance \small (with honors)}
+\descript{| Sorbonne University (former Paris VI) in collaboration with École Polytechnique}
+\location{Sep 2014 – Jun 2016}
+\vspace{0.1cm}
+\begin{tightemize}
+	\item[\diamond] Numerical Probability (Monte-Carlo, Sensitivities Computation, $\dots$).
+	\item[\diamond] Stochastic Algorithms (Stochastic Gradient Descent, $\dots$).
+	\item[\diamond] Machine Learning.
+	\item[\diamond] Stochastic Calculus and Control.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Bachelor degree in Mathematics \small (with honors)}
+\descript{| Aix-Marseille University}
+\location{Sep 2011 – Jun 2014}
+Third year of the Bachelor on exchange with the ERASMUS program at Lund University's mathematics department, Lund, Sweden.
+
+
+
+\begin{minipage}[t]{0.39\textwidth}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%	 SKILLS
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\vspace{\topsep}
+	\section{Skills}
+
+	\subsection{Programming}
+
+	\vspace{\topsep}
+	\begin{tightemize}
+		\item[\diamond] \textbf{C++} (Creation of libraries)
+		\item[\diamond] \textbf{Python} (Binding of C++ libraries using Pybind11)
+		\item[\diamond] Basics: \textbf{Scala} $\diamond$ \textbf{Kafka} $\diamond$ \textbf{MongoDB}
+	\end{tightemize}
+
+	\sectionsep
+	\subsection{Languages}
+	% \vspace{\topsep}
+	\textbf{French}: native -- \textbf{English}: fluent
+	% \begin{tightemize}
+	% 	\item French: native
+	% 	\item English: fluent
+	% \end{tightemize}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%	 Interests
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\vspace{\topsep}
+	\section{Interests}
+	Running $\diamond$ Trails
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.59\textwidth}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%	 Publications
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\vspace{\topsep}
+
+	\section{Publications}
+	\vspace{-0.1cm}
+	\begin{itemize}
+		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. Submitted to \textit{Quantitative Finance}, 2020.
+		\item[\diamond] Jean-Michel Fayolle, Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Quantization-based Bermudan option pricing in the $FX$ world}. Submitted to \textit{Journal of Computational Finance}, 2019.
+		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{New weak error bounds and expansions for optimal quantization}. Published in \textit{Journal of Computational and Applied Mathematics}, 2019.
+	\end{itemize}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%	 SKILLS
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% % \vspace{\topsep}
+	% \section{Links}
+	% Website: \href{https://montest.github.io}{\bf montest.github.io} \\
+	% Github: \href{https://github.com/montest}{\bf montest} \\
+	% LinkedIn: \href{https://www.linkedin.com/in/thibaut-montes-194a77a9}{\bf thibaut-montes-194a77a9}
+
+	\vspace{-1.cm}
+	\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+	\bibliographystyle{alpha}
+	\bibliography{publications}
+	\nocite{*}
+
+\end{minipage}
+
+\end{document}

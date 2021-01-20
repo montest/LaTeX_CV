@@ -49,24 +49,34 @@
 \vspace{\topsep}
 
 \section{Professional Experience}
+\sectionsep
 
 \runsubsection{Desk Strat}
 \descript{| Deutsche Bank}
 \location{ Sep 2020 - Now | London, United-Kingdom}
-Working on the Synthetic Desk's migration to Kannon (P$\&$L and Risk tool used by trading).
+Working on the Synthetic Desk's (ETFs and Indices) migration to Kannon (New P$\&$L and Risk tool used by trading). My main tasks were:
+\vspace{0.1cm}
+\begin{tightemize}
+	\item[\diamond] Improve PV and Risk computations.
+	\item[\diamond] Automatize and stabilize pcf file upload for ETFs/Indices from different sources.
+	\item[\diamond] Code optimization.
+\end{tightemize}
 
+\sectionsep
 \sectionsep
 
 \runsubsection{Research Advisor}
 \descript{| The Independent Calculation Agent (ICA)}
 \location{ Nov 2016 - Mar 2020 | Paris, France}
 As a PhD candidate, I worked in collaboration with ICA on the following projects:
+\vspace{0.1cm}
 \begin{tightemize}
-	\item[\diamond] Optimizing their analytic library using Optimal Quantization (Pricing of Exotic Options in the interest rate world).
-	\item[\diamond] Identifying and \textit{killing} bias in their xVA computation using Multilevel Monte-Carlo methods.
+	\item[\diamond] Optimization of the analytic library using Optimal Quantization (Pricing of Exotic Options in the interest rate world).
+	\item[\diamond] Identifying and \textit{killing} bias in xVA computation using Multilevel Monte-Carlo methods.
 	% \item Implementing new regulatory risk measures in the library.
 \end{tightemize}
 
+\sectionsep
 \sectionsep
 
 \runsubsection{Intern}
@@ -74,6 +84,7 @@ As a PhD candidate, I worked in collaboration with ICA on the following projects
 \location{May 2016 – Oct 2016 | Paris, France}
 Optimization of financial products pricing and risk measures sensitivities computations.
 
+\sectionsep
 \sectionsep
 
 \runsubsection{Intern}
@@ -84,18 +95,28 @@ Simulation of short rate models using trinomial trees. The project can be access
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	 EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
 
 \vspace{\topsep}
 
 \section{Education}
+\sectionsep
 
 \runsubsection{PhD in Numerical Probability}
 \descript{| LPSM | Sorbonne University (former Paris VI)}
 \location{Mar 2017 – Jun 2020}
-I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA France.
+I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA.
+% My research subjects were \textbf{Optimal Quantization}, also known as K-means, and Multilevel Monte-Carlo methods.
 
-My research subjects were \textbf{Optimal Quantization}, also known as K-means, and Multilevel Monte-Carlo methods.
+\vspace{0.2cm}
+During my PhD, I made some contributions to the theoretical study and financial applications of \textbf{Optimal Quantization}, also known as K-means. I also had a keen interest for Multilevel Monte-Carlo methods and Stochastic Algorithms.
+\vspace{0.1cm}
+\begin{tightemize}
+	\item[\diamond] First, I focused on the numerical optimization of the problem (fixed point search and gradient descent) in order to efficiently build such quantizers.
+	\item[\diamond] Then, I applied this numerical method for the pricing of PRDC bermudan options or the study of a Stationary Heston model.
+\end{tightemize}
 
+\sectionsep
 \sectionsep
 
 \runsubsection{ Research Master in Probability and Finance \small (with honors)}
@@ -110,81 +131,103 @@ My research subjects were \textbf{Optimal Quantization}, also known as K-means, 
 \end{tightemize}
 
 \sectionsep
+\sectionsep
 
 \runsubsection{Bachelor degree in Mathematics \small (with honors)}
 \descript{| Aix-Marseille University}
 \location{Sep 2011 – Jun 2014}
 Third year of the Bachelor on exchange with the ERASMUS program at Lund University's mathematics department, Lund, Sweden.
 
+\sectionsep
+\sectionsep
+
+\runsubsection{Scientifique Baccalauréat \small (with honors)}
+\descript{| Lycée Jules Viette, Montbéliard}
+\location{Sep 2008 – Jun 2011}
+With Mathematics and Engineering speciality.
+
+\newpage
 
 
-\begin{minipage}[t]{0.39\textwidth}
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 SKILLS
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\vspace{\topsep}
-	\section{Skills}
-
-	\subsection{Programming}
-
-	\vspace{\topsep}
-	\begin{tightemize}
-		\item[\diamond] \textbf{C++} (Creation of libraries)
-		\item[\diamond] \textbf{Python} (Binding of C++ libraries using Pybind11)
-		\item[\diamond] Basics: \textbf{Scala} $\diamond$ \textbf{Kafka} $\diamond$ \textbf{MongoDB}
-	\end{tightemize}
-
-	\sectionsep
-	\subsection{Languages}
-	% \vspace{\topsep}
-	\textbf{French}: native -- \textbf{English}: fluent
-	% \begin{tightemize}
-	% 	\item French: native
-	% 	\item English: fluent
-	% \end{tightemize}
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 Interests
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\vspace{\topsep}
-	\section{Interests}
-	Running $\diamond$ Trails
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.59\textwidth}
+% \begin{minipage}[t]{0.99\textwidth}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	 Publications
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionsep
 	\vspace{\topsep}
 
 	\section{Publications}
-	\vspace{-0.1cm}
+	\sectionsep
 	\begin{itemize}
-		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. Submitted to \textit{Quantitative Finance}, 2020.
-		\item[\diamond] Jean-Michel Fayolle, Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Quantization-based Bermudan option pricing in the $FX$ world}. Submitted to \textit{Journal of Computational Finance}, 2019.
-		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{New weak error bounds and expansions for optimal quantization}. Published in \textit{Journal of Computational and Applied Mathematics}, 2019.
+		\item[\diamond] With Vincent Lemaire and Gilles Pagès.  Submitted to \textit{Quantitative Finance}, 2020.
+
+		      \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}.
+		\item[\diamond] With Jean-Michel Fayolle, Vincent Lemaire and Gilles Pagès. Submitted to \textit{Journal of Computational Finance}, 2019.
+
+		      \textbf{Quantization-based Bermudan option pricing in the $FX$ world}.
+		\item[\diamond] With Vincent Lemaire and Gilles Pagès. Published in \textit{Journal of Computational and Applied Mathematics}, 2019.
+
+		      \textbf{New weak error bounds and expansions for optimal quantization}.
 	\end{itemize}
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 SKILLS
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% % \vspace{\topsep}
-	% \section{Links}
-	% Website: \href{https://montest.github.io}{\bf montest.github.io} \\
-	% Github: \href{https://github.com/montest}{\bf montest} \\
-	% LinkedIn: \href{https://www.linkedin.com/in/thibaut-montes-194a77a9}{\bf thibaut-montes-194a77a9}
+\sectionsep
+
+% \vspace{\topsep}
+
+	\section{Skills}
+	\sectionsep
+
+	\runsubsection{Programming}
+	\sectionsep
+	\vspace{0.1cm}
+	\begin{tightemize}
+		\item[\diamond] \textbf{C++} (Library creation)
+		\item[\diamond] \textbf{Python} (Binding of C++ libraries using Pybind11, Pandas, Pytorch)
+		\item[\diamond] Basics: \textbf{Scala} $\diamond$ \textbf{Kafka} $\diamond$ \textbf{MongoDB}
+	\end{tightemize}
+
+
+	\sectionsep
+	\sectionsep
+
+	\runsubsection{Languages}
+	\sectionsep
+	\vspace{0.1cm}
+	\begin{tightemize}
+		\item[\diamond] \textbf{French}: native
+		\item[\diamond] \textbf{English}: fluent
+	\end{tightemize}
 
 	\vspace{-1.cm}
 	\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
 	\bibliographystyle{alpha}
 	\bibliography{publications}
 	\nocite{*}
+% \end{minipage}
 
-\end{minipage}
+
+
+% \hfill
+% \begin{minipage}[t]{0.49\textwidth}
+%
+%
+% 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	%	 Interests
+% 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	\sectionsep
+%
+% 	\vspace{\topsep}
+% 	\section{Interests}
+% 	Running $\diamond$ Trails
+%
+%
+% 	\vspace{-1.cm}
+% 	\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% 	\bibliographystyle{alpha}
+% 	\bibliography{publications}
+% 	\nocite{*}
+%
+% \end{minipage}
 
 \end{document}
