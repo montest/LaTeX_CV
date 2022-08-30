@@ -1,21 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.2 (16/9/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
 
@@ -25,17 +7,10 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%	 LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %	 TITLE NAME
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Thibaut}{Montes}{
 	\href{https://montest.github.io/}{montest.github.io} | \href{mailto:montes.thibaut@gmail.com}{montes.thibaut@gmail.com}
@@ -49,72 +24,86 @@
 \vspace{\topsep}
 
 \section{Professional Experience}
+\sectionsep
+
+\runsubsection{Senior Machine Learning Researcher}
+\descript{| Talkwalker}
+\location{ Mai 2021 - Now | Luxembourg, Luxembourg}
+Talkwalker is a Consumer Intelligence Acceleration platform for brands to drive business impact and revenue. I work in the \textbf{AI $\&$ Machine Learning} team responsible to extract information from raw data coming from social medias (text, images, podcasts, videos, etc). More specifically, I use deep neural networks in order to solve \textbf{NLP} related problems. Here are some examples of my projects: $ $
+\vspace{0.1cm}
+\begin{tightemize}
+	\item[\diamond] Train prediction models based on \textbf{pre-trained multilingual transformers models} for emotion and aspect-based sentiment analysis.
+	\item[\diamond] \textbf{Meta and Active Learning} based training to improve classifiers accuracy with fewer labelled documents.
+\end{tightemize}
+
+\sectionsep
 
 \runsubsection{Desk Strat}
 \descript{| Deutsche Bank}
-\location{ Sep 2020 - Now | London, United-Kingdom}
-Working on the Synthetic Desk's migration to Kannon (P$\&$L and Risk tool used by trading).
+\location{ Sep 2020 - April 2021 | London, United-Kingdom}
+I worked on the Synthetic Desk's (ETFs and Indices) migration to Kannon (New P$\&$L and Risk tool used by trading). My main tasks was to improve PV and Risk computations of ETFs and indices.
 
 \sectionsep
 
 \runsubsection{Research Advisor}
 \descript{| The Independent Calculation Agent (ICA)}
-\location{ Nov 2016 - Mar 2020 | Paris, France}
-As a PhD candidate, I worked in collaboration with ICA on the following projects:
+\location{ May 2016 - Mar 2020 | Paris, France}
+First as an intern, then as a PhD candidate, I worked in collaboration with ICA on the following projects:
+\vspace{0.1cm}
 \begin{tightemize}
-	\item[\diamond] Optimizing their analytic library using Optimal Quantization (Pricing of Exotic Options in the interest rate world).
-	\item[\diamond] Identifying and \textit{killing} bias in their xVA computation using Multilevel Monte-Carlo methods.
-	% \item Implementing new regulatory risk measures in the library.
+	\item[\diamond] Optimization of the analytic library using Optimal Quantization (Pricing of Exotic Options in the interest rate world).
+	\item[\diamond] Identifying and \textit{killing} bias in xVA computation using Multilevel Monte-Carlo methods.
 \end{tightemize}
 
 \sectionsep
 
-\runsubsection{Intern}
-\descript{| The Independent Calculation Agent (ICA)}
-\location{May 2016 – Oct 2016 | Paris, France}
-Optimization of financial products pricing and risk measures sensitivities computations.
-
-\sectionsep
-
-\runsubsection{Intern}
-\descript{| LPSM | Sorbonne University (former Paris VI)}
-\location{Jun 2015 – Jul 2015 | Paris, France}
-Simulation of short rate models using trinomial trees. The project can be accessed at the following link: \href{http://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees}.
+% \runsubsection{Intern}
+% \descript{| LPSM | Sorbonne University}
+% \location{Jun 2015 – Jul 2015 | Paris, France}
+% Simulation of short rate models using trinomial trees. The project can be accessed at the following link: \href{https://simulations.lpsm.paris/trinomial_trees/}{\bf Trinomial Trees}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	 EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{\topsep}
+% \vspace{\topsep}
+% \sectionsep
 
 \section{Education}
+\sectionsep
 
 \runsubsection{PhD in Numerical Probability}
-\descript{| LPSM | Sorbonne University (former Paris VI)}
+\descript{| LPSM | Sorbonne University}
 \location{Mar 2017 – Jun 2020}
-I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA France.
+I was under the direction of \textbf{Gilles Pagès} and \textbf{Vincent Lemaire} at the LPSM and the supervision of \textbf{Jean-Michel Fayolle} at ICA.
 
-My research subjects were \textbf{Optimal Quantization}, also known as K-means, and Multilevel Monte-Carlo methods.
+\vspace{0.2cm}
+During my PhD, I made contributions to the theoretical study and financial applications of \textbf{Optimal Quantization}, also known as K-means. I also had a keen interest for Multilevel Monte-Carlo methods and Stochastic Algorithms.
+\vspace{0.1cm}
+\begin{tightemize}
+	\item[\diamond] First, I focused on the numerical optimization of the problem (fixed point search and gradient descent) in order to efficiently build such quantizers.
+	\item[\diamond] Then, I applied this numerical method for the pricing of PRDC bermudan options or the study of a Stationary Heston model.
+\end{tightemize}
 
 \sectionsep
 
-\runsubsection{ Research Master in Probability and Finance \small (with honors)}
-\descript{| Sorbonne University (former Paris VI) in collaboration with École Polytechnique}
+\runsubsection{ Research Master in Probability and Finance \small (Master El-Karoui - with honors)}
+\descript{| \\ Sorbonne University}
 \location{Sep 2014 – Jun 2016}
-\vspace{0.1cm}
-\begin{tightemize}
-	\item[\diamond] Numerical Probability (Monte-Carlo, Sensitivities Computation, $\dots$).
-	\item[\diamond] Stochastic Algorithms (Stochastic Gradient Descent, $\dots$).
-	\item[\diamond] Machine Learning.
-	\item[\diamond] Stochastic Calculus and Control.
-\end{tightemize}
+% \vspace{0.1cm}
+% \begin{tightemize}
+% 	\item[\diamond] Numerical Probability (Monte-Carlo, Sensitivities Computation, $\dots$).
+% 	\item[\diamond] Stochastic Algorithms (Stochastic Gradient Descent, $\dots$).
+% 	\item[\diamond] Machine Learning.
+% 	\item[\diamond] Stochastic Calculus and Control.
+% \end{tightemize}
 
 \sectionsep
 
 \runsubsection{Bachelor degree in Mathematics \small (with honors)}
 \descript{| Aix-Marseille University}
 \location{Sep 2011 – Jun 2014}
-Third year of the Bachelor on exchange with the ERASMUS program at Lund University's mathematics department, Lund, Sweden.
+% Third year of the Bachelor on exchange with the ERASMUS program at Lund University's mathematics department, Lund, Sweden.
 
 
 
@@ -124,34 +113,37 @@ Third year of the Bachelor on exchange with the ERASMUS program at Lund Universi
 	%	 SKILLS
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\vspace{\topsep}
 	\section{Skills}
+	\vspace{0.1cm}
 
 	\subsection{Programming}
 
 	\vspace{\topsep}
+	\vspace{0.1cm}
 	\begin{tightemize}
-		\item[\diamond] \textbf{C++} (Creation of libraries)
-		\item[\diamond] \textbf{Python} (Binding of C++ libraries using Pybind11)
-		\item[\diamond] Basics: \textbf{Scala} $\diamond$ \textbf{Kafka} $\diamond$ \textbf{MongoDB}
+		\item[\diamond] \textbf{Python} (Huggingface, PyTorch, ONNX, NumPy, pytest, Pandas, Pybind11, ...)
+		\item[\diamond] \textbf{C++} (Creation of libraries during my PhD)
+		\item[\diamond] Tools used daily: \textbf{Git} $\diamond$ \textbf{Docker}
+		\item[\diamond] Basics knowledge: \textbf{Java} $\diamond$ \textbf{Scala} $\diamond$ \textbf{Kafka} $\diamond$ \textbf{MongoDB}
 	\end{tightemize}
 
 	\sectionsep
+	\vspace{0.1cm}
 	\subsection{Languages}
+	\vspace{0.1cm}
 	% \vspace{\topsep}
 	\textbf{French}: native -- \textbf{English}: fluent
+	% \sectionsep
+	% \vspace{0.1cm}
+	% \begin{tightemize}
+	% 	\item[\diamond] \textbf{French}: native
+	% 	\item[\diamond] \textbf{English}: fluent
+	% \end{tightemize}
 	% \begin{tightemize}
 	% 	\item French: native
 	% 	\item English: fluent
 	% \end{tightemize}
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 Interests
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\vspace{\topsep}
-	\section{Interests}
-	Running $\diamond$ Trails
 
 \end{minipage}
 \hfill
@@ -160,24 +152,17 @@ Third year of the Bachelor on exchange with the ERASMUS program at Lund Universi
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	 Publications
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\vspace{\topsep}
+	% \vspace{\topsep}
 
 	\section{Publications}
 	\vspace{-0.1cm}
 	\begin{itemize}
-		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. Submitted to \textit{Quantitative Finance}, 2020.
-		\item[\diamond] Jean-Michel Fayolle, Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{Quantization-based Bermudan option pricing in the $FX$ world}. Submitted to \textit{Journal of Computational Finance}, 2019.
-		\item[\diamond] Vincent Lemaire, Thibaut Montes and Gilles Pagès. \textbf{New weak error bounds and expansions for optimal quantization}. Published in \textit{Journal of Computational and Applied Mathematics}, 2019.
-	\end{itemize}
+		\item[\diamond] \href{https://www.tandfonline.com/doi/abs/10.1080/14697688.2021.2023205?journalCode=rquf20}{Lemaire, V., Montes, T. and Pagès G. (2022) \textbf{Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization}. \textit{Quantitative Finance}.}
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%	 SKILLS
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% % \vspace{\topsep}
-	% \section{Links}
-	% Website: \href{https://montest.github.io}{\bf montest.github.io} \\
-	% Github: \href{https://github.com/montest}{\bf montest} \\
-	% LinkedIn: \href{https://www.linkedin.com/in/thibaut-montes-194a77a9}{\bf thibaut-montes-194a77a9}
+		\item[\diamond] \href{https://www.risk.net/journal-of-computational-finance/7869926/quantization-based-bermudan-option-pricing-in-the-foreign-exchange-world}{Fayolle, J.-M., Lemaire, V., Montes, T. and Pagès G. (2021) \textbf{Quantization-based Bermudan option pricing in the $FX$ world}. \textit{Journal of Computational Finance}.}
+
+		\item[\diamond] \href{https://www.sciencedirect.com/science/article/abs/pii/S0377042719306752}{Lemaire, V., Montes, T. and Pagès G. (2020) \textbf{New weak error bounds and expansions for optimal quantization}. \textit{Journal of Computational and Applied Mathematics}, 2020.}
+	\end{itemize}
 
 	\vspace{-1.cm}
 	\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
